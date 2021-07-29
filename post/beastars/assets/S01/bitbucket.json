@@ -1,0 +1,376 @@
+[
+  {
+    "type": "video",
+    "title": "1. The Moon and the Beast",
+    "sources": [
+      {
+        "src": "https://bbcdn.githack.com/kiennguyen19323/beastars_s01e01/raw/8db290ffd271ab07b2d8fcc017d170706667b554/section.m3u8",
+        "type": "m3u8",
+        "size": 1080
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "subtitles",
+        "label": "Vietnamese",
+        "srclang": "VN",
+        "src": "assets/s01/CC/01.vi.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "English",
+        "srclang": "EN",
+        "src": "assets/s01/CC/01.en.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "Indonesian",
+        "srclang": "ID",
+        "src": "assets/s01/CC/01.id.vtt"
+      }
+    ]
+  },
+  {
+    "type": "video",
+    "title": "2. The Academy's Top Dogs",
+    "sources": [
+      {
+        "src": "https://bbcdn.githack.com/kiennguyen19323/beastars_s01e02/raw/78019cbd81063f85a3950aad724c7e626f366e05/section.m3u8",
+        "type": "m3u8",
+        "size": 1080
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "subtitles",
+        "label": "Vietnamese",
+        "srclang": "VN",
+        "src": "assets/s01/CC/02.vi.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "English",
+        "srclang": "EN",
+        "src": "assets/s01/CC/02.en.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "Indonesian",
+        "srclang": "ID",
+        "src": "assets/s01/CC/02.id.vtt"
+      }
+    ]
+  },
+  {
+    "type": "video",
+    "title": "3. A Wolf is Born",
+    "sources": [
+      {
+        "src": "https://bbcdn.githack.com/kiennguyen19323/beastars_s01e03/raw/44a1cf9b5d9142e3dc5ff4a79cf01d29870ddac9/section.m3u8",
+        "type": "m3u8",
+        "size": 1080
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "subtitles",
+        "label": "Vietnamese",
+        "srclang": "VN",
+        "src": "assets/s01/CC/03.vi.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "English",
+        "srclang": "EN",
+        "src": "assets/s01/CC/03.en.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "Indonesian",
+        "srclang": "ID",
+        "src": "assets/s01/CC/03.id.vtt"
+      }
+    ]
+  },
+  {
+    "type": "video",
+    "title": "4. Give it Your All",
+    "sources": [
+      {
+        "src": "https://bbcdn.githack.com/kiennguyen19323/beastars_s01e04/raw/e337cf6ba1b841d9eeee6ef31a9ed71477364d58/section.m3u8",
+        "type": "m3u8",
+        "size": 1080
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "subtitles",
+        "label": "Vietnamese",
+        "srclang": "VN",
+        "src": "assets/s01/CC/04.vi.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "English",
+        "srclang": "EN",
+        "src": "assets/s01/CC/04.en.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "Indonesian",
+        "srclang": "ID",
+        "src": "assets/s01/CC/04.id.vtt"
+      }
+    ]
+  },
+  {
+    "type": "video",
+    "title": "5. Two Sides to the Story",
+    "sources": [
+      {
+        "src": "https://bbcdn.githack.com/kiennguyen19323/beastars_s01e05/raw/a41d36663229b146290ada2213d5a90afb604da6/section.m3u8",
+        "type": "m3u8",
+        "size": 1080
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "subtitles",
+        "label": "Vietnamese",
+        "srclang": "VN",
+        "src": "assets/s01/CC/05.vi.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "English",
+        "srclang": "EN",
+        "src": "assets/s01/CC/05.en.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "Indonesian",
+        "srclang": "ID",
+        "src": "assets/s01/CC/05.id.vtt"
+      }
+    ]
+  },
+  {
+    "type": "video",
+    "title": "6. Blurred Vision – Dream or Reality?",
+    "sources": [
+      {
+        "src": "https://bbcdn.githack.com/kiennguyen19323/beastars_s01e06/raw/e91681e10ac15d92d421bcb28502547b604c5f3d/section.m3u8",
+        "type": "m3u8",
+        "size": 1080
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "subtitles",
+        "label": "Vietnamese",
+        "srclang": "VN",
+        "src": "assets/s01/CC/06.vi.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "English",
+        "srclang": "EN",
+        "src": "assets/s01/CC/06.en.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "Indonesian",
+        "srclang": "ID",
+        "src": "assets/s01/CC/06.id.vtt"
+      }
+    ]
+  },
+  {
+    "type": "video",
+    "title": "7. Below the Fur Coat",
+    "sources": [
+      {
+        "src": "https://bbcdn.githack.com/kiennguyen19323/beastars_s01e07/raw/d9db24383eaa57c9e806d495078d09d3a7dce023/section.m3u8",
+        "type": "m3u8",
+        "size": 1080
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "subtitles",
+        "label": "Vietnamese",
+        "srclang": "VN",
+        "src": "assets/s01/CC/07.vi.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "English",
+        "srclang": "EN",
+        "src": "assets/s01/CC/07.en.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "Indonesian",
+        "srclang": "ID",
+        "src": "assets/s01/CC/07.id.vtt"
+      }
+    ]
+  },
+  {
+    "type": "video",
+    "title": "8. Caught like Floss in a Canine's Teeth",
+    "sources": [
+      {
+        "src": "https://bbcdn.githack.com/kiennguyen19323/beastars_s01e08/raw/dfec5b1f019044b7bc7956071b10efd205b3c107/section.m3u8",
+        "type": "m3u8",
+        "size": 1080
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "subtitles",
+        "label": "Vietnamese",
+        "srclang": "VN",
+        "src": "assets/s01/CC/08.vi.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "English",
+        "srclang": "EN",
+        "src": "assets/s01/CC/08.en.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "Indonesian",
+        "srclang": "ID",
+        "src": "assets/s01/CC/08.id.vtt"
+      }
+    ]
+  },
+  {
+    "type": "video",
+    "title": "9. Into the Lion's Den",
+    "sources": [
+      {
+        "src": "https://bbcdn.githack.com/kiennguyen19323/beastars_s01e09/raw/7e7862ff3ec62298ec75b3988a0375b057dab128/section.m3u8",
+        "type": "m3u8",
+        "size": 1080
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "subtitles",
+        "label": "Vietnamese",
+        "srclang": "VN",
+        "src": "assets/s01/CC/09.vi.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "English",
+        "srclang": "EN",
+        "src": "assets/s01/CC/09.en.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "Indonesian",
+        "srclang": "ID",
+        "src": "assets/s01/CC/09.id.vtt"
+      }
+    ]
+  },
+  {
+    "type": "video",
+    "title": "10. A Wolf in Sheep's Clothing",
+    "sources": [
+      {
+        "src": "https://bbcdn.githack.com/kiennguyen19323/beastars_s01e10/raw/a5f4f19e6139974007000909be47bea4c20192a2/section.m3u8",
+        "type": "m3u8",
+        "size": 1080
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "subtitles",
+        "label": "Vietnamese",
+        "srclang": "VN",
+        "src": "assets/s01/CC/10.vi.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "English",
+        "srclang": "EN",
+        "src": "assets/s01/CC/10.en.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "Indonesian",
+        "srclang": "ID",
+        "src": "assets/s01/CC/10.id.vtt"
+      }
+    ]
+  },
+  {
+    "type": "video",
+    "title": "11. To the Neon District",
+    "sources": [
+      {
+        "src": "https://bbcdn.githack.com/kiennguyen19323/beastars_s01e11/raw/96f807eeaa8620ff897c3b7639a331e94820d2bb/section.m3u8",
+        "type": "m3u8",
+        "size": 1080
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "subtitles",
+        "label": "Vietnamese",
+        "srclang": "VN",
+        "src": "assets/s01/CC/11.vi.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "English",
+        "srclang": "EN",
+        "src": "assets/s01/CC/11.en.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "Indonesian",
+        "srclang": "ID",
+        "src": "assets/s01/CC/11.id.vtt"
+      }
+    ]
+  },
+  {
+    "type": "video",
+    "title": "12. In the Storm's Wake",
+    "sources": [
+      {
+        "src": "https://bbcdn.githack.com/kiennguyen19323/beastars_s01e12/raw/fa9dbbf24a3c4d5a611d8ad7730b8b5e53218689/section.m3u8",
+        "type": "m3u8",
+        "size": 1080
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "subtitles",
+        "label": "Vietnamese",
+        "srclang": "VN",
+        "src": "assets/s01/CC/12.vi.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "English",
+        "srclang": "EN",
+        "src": "assets/s01/CC/12.en.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "Indonesian",
+        "srclang": "ID",
+        "src": "assets/s01/CC/12.id.vtt"
+      }
+    ]
+  },
+  "poster.jpg",
+  "khplayer_lWM5NMHBLiPXdCvcOqA2MTYxNTA0MzA5MzU3OQ"
+]

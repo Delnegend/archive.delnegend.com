@@ -1,0 +1,72 @@
+- episode: 1
+  title: "Runaway Raccoon"
+  urls:
+    - direct__Copy__https://cdn.jsdelivr.net/gh/mjstc-storage/BNA.S01.P1/S01E01.Runaway.Raccoon/index.m3u8
+  subs:
+    - en__sub/s01/01.en.srt
+- episode: 2
+  title: "Rabbit Town"
+  urls:
+    - direct__Copy__https://cdn.jsdelivr.net/gh/mjstc-storage/BNA.S01.P1/S02E02.Rabbit.Town/index.m3u8
+  subs:
+    - en__sub/s01/02.en.srt
+- episode: 3
+  title: "Rhino Melancholy"
+  urls:
+    - direct__Copy__https://cdn.jsdelivr.net/gh/mjstc-storage/BNA.S01.P1/S03E03.Rhino.Melancholy/index.m3u8
+  subs:
+    - en__sub/s01/03.en.srt
+- episode: 4
+  title: "Dolphin Daydream"
+  urls:
+    - direct__Copy__https://cdn.jsdelivr.net/gh/mjstc-storage/BNA.S01.P2/S01E04.Dolphin.Daydream/index.m3u8
+  subs:
+    - en__sub/s01/04.en.srt
+- episode: 5
+  title: "Greedy Bears"
+  urls:
+    - direct__Copy__https://cdn.jsdelivr.net/gh/mjstc-storage/BNA.S01.P2/S01E05.Greedy.Bears/index.m3u8
+  subs:
+    - en__sub/s01/05.en.srt
+- episode: 6
+  title: "Fox Waltz"
+  urls:
+    - direct__Copy__https://cdn.jsdelivr.net/gh/mjstc-storage/BNA.S01.P2/S01E06.Fox.Waltz/index.m3u8
+  subs:
+    - en__sub/s01/06.en.srt
+- episode: 7
+  title: "Easy Albatross"
+  urls:
+    - direct__Copy__https://cdn.jsdelivr.net/gh/mjstc-storage/BNA.S01.P3/S01E07.Easy.Albatross/index.m3u8
+  subs:
+    - en__sub/s01/07.en.srt
+- episode: 8
+  title: "The Mole Rat Speaks"
+  urls:
+    - direct__Copy__https://cdn.jsdelivr.net/gh/mjstc-storage/BNA.S01.P3/S01E08.The.Mole.Rat.Speaks/index.m3u8
+  subs:
+    - en__sub/s01/08.en.srt
+- episode: 9
+  title: "Human Scapegoat"
+  urls:
+    - direct__Copy__https://cdn.jsdelivr.net/gh/mjstc-storage/BNA.S01.P3/S01E09.Human.Scapegoat/index.m3u8
+  subs:
+    - en__sub/s01/09.en.srt
+- episode: 10
+  title: "Rabid Wolf"
+  urls:
+    - direct__Copy__https://cdn.jsdelivr.net/gh/mjstc-storage/BNA.S01.P4/S01E10.Rabid.Wolf/index.m3u8
+  subs:
+    - en__sub/s01/10.en.srt
+- episode: 11
+  title: "A Beastly Feast"
+  urls:
+    - direct__Copy__https://cdn.jsdelivr.net/gh/mjstc-storage/BNA.S01.P4/S01E11.A.Beastly.Feast/index.m3u8
+  subs:
+    - en__sub/s01/11.en.srt
+- episode: 12
+  title: "Anima-City"
+  urls:
+    - direct__Copy__https://cdn.jsdelivr.net/gh/mjstc-storage/BNA.S01.P4/S01E12.Anima-City/index.m3u8
+  subs:
+    - en__sub/s01/12.en.srt

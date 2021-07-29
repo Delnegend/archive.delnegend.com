@@ -1,0 +1,376 @@
+[
+  {
+    "type": "video",
+    "title": "1. The Moon and the Beast",
+    "sources": [
+      {
+        "src": "https://cdn.jsdelivr.net/gh/mjstc-storage/Beastars_S01E01/section.m3u8",
+        "type": "m3u8",
+        "size": 1080
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "subtitles",
+        "label": "Vietnamese",
+        "srclang": "VN",
+        "src": "assets/S01/CC/01.vi.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "English",
+        "srclang": "EN",
+        "src": "assets/S01/CC/01.en.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "Indonesian",
+        "srclang": "ID",
+        "src": "assets/S01/CC/01.id.vtt"
+      }
+    ]
+  },
+  {
+    "type": "video",
+    "title": "2. The Academy's Top Dogs",
+    "sources": [
+      {
+        "src": "https://cdn.jsdelivr.net/gh/mjstc-storage/Beastars_S01E02/section.m3u8",
+        "type": "m3u8",
+        "size": 1080
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "subtitles",
+        "label": "Vietnamese",
+        "srclang": "VN",
+        "src": "assets/S01/CC/02.vi.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "English",
+        "srclang": "EN",
+        "src": "assets/S01/CC/02.en.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "Indonesian",
+        "srclang": "ID",
+        "src": "assets/S01/CC/02.id.vtt"
+      }
+    ]
+  },
+  {
+    "type": "video",
+    "title": "3. A Wolf is Born",
+    "sources": [
+      {
+        "src": "https://cdn.jsdelivr.net/gh/mjstc-storage/Beastars_S01E03/section.m3u8",
+        "type": "m3u8",
+        "size": 1080
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "subtitles",
+        "label": "Vietnamese",
+        "srclang": "VN",
+        "src": "assets/S01/CC/03.vi.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "English",
+        "srclang": "EN",
+        "src": "assets/S01/CC/03.en.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "Indonesian",
+        "srclang": "ID",
+        "src": "assets/S01/CC/03.id.vtt"
+      }
+    ]
+  },
+  {
+    "type": "video",
+    "title": "4. Give it Your All",
+    "sources": [
+      {
+        "src": "https://cdn.jsdelivr.net/gh/mjstc-storage/Beastars_S01E04/section.m3u8",
+        "type": "m3u8",
+        "size": 1080
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "subtitles",
+        "label": "Vietnamese",
+        "srclang": "VN",
+        "src": "assets/S01/CC/04.vi.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "English",
+        "srclang": "EN",
+        "src": "assets/S01/CC/04.en.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "Indonesian",
+        "srclang": "ID",
+        "src": "assets/S01/CC/04.id.vtt"
+      }
+    ]
+  },
+  {
+    "type": "video",
+    "title": "5. Two Sides to the Story",
+    "sources": [
+      {
+        "src": "https://cdn.jsdelivr.net/gh/mjstc-storage/Beastars_S01E05/section.m3u8",
+        "type": "m3u8",
+        "size": 1080
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "subtitles",
+        "label": "Vietnamese",
+        "srclang": "VN",
+        "src": "assets/S01/CC/05.vi.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "English",
+        "srclang": "EN",
+        "src": "assets/S01/CC/05.en.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "Indonesian",
+        "srclang": "ID",
+        "src": "assets/S01/CC/05.id.vtt"
+      }
+    ]
+  },
+  {
+    "type": "video",
+    "title": "6. Blurred Vision – Dream or Reality?",
+    "sources": [
+      {
+        "src": "https://cdn.jsdelivr.net/gh/mjstc-storage/Beastars_S01E06/section.m3u8",
+        "type": "m3u8",
+        "size": 1080
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "subtitles",
+        "label": "Vietnamese",
+        "srclang": "VN",
+        "src": "assets/S01/CC/06.vi.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "English",
+        "srclang": "EN",
+        "src": "assets/S01/CC/06.en.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "Indonesian",
+        "srclang": "ID",
+        "src": "assets/S01/CC/06.id.vtt"
+      }
+    ]
+  },
+  {
+    "type": "video",
+    "title": "7. Below the Fur Coat",
+    "sources": [
+      {
+        "src": "https://cdn.jsdelivr.net/gh/mjstc-storage/Beastars_S01E07/section.m3u8",
+        "type": "m3u8",
+        "size": 1080
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "subtitles",
+        "label": "Vietnamese",
+        "srclang": "VN",
+        "src": "assets/S01/CC/07.vi.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "English",
+        "srclang": "EN",
+        "src": "assets/S01/CC/07.en.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "Indonesian",
+        "srclang": "ID",
+        "src": "assets/S01/CC/07.id.vtt"
+      }
+    ]
+  },
+  {
+    "type": "video",
+    "title": "8. Caught like Floss in a Canine's Teeth",
+    "sources": [
+      {
+        "src": "https://cdn.jsdelivr.net/gh/mjstc-storage/Beastars_S01E08/section.m3u8",
+        "type": "m3u8",
+        "size": 1080
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "subtitles",
+        "label": "Vietnamese",
+        "srclang": "VN",
+        "src": "assets/S01/CC/08.vi.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "English",
+        "srclang": "EN",
+        "src": "assets/S01/CC/08.en.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "Indonesian",
+        "srclang": "ID",
+        "src": "assets/S01/CC/08.id.vtt"
+      }
+    ]
+  },
+  {
+    "type": "video",
+    "title": "9. Into the Lion's Den",
+    "sources": [
+      {
+        "src": "https://cdn.jsdelivr.net/gh/mjstc-storage/Beastars_S01E09/section.m3u8",
+        "type": "m3u8",
+        "size": 1080
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "subtitles",
+        "label": "Vietnamese",
+        "srclang": "VN",
+        "src": "assets/S01/CC/09.vi.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "English",
+        "srclang": "EN",
+        "src": "assets/S01/CC/09.en.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "Indonesian",
+        "srclang": "ID",
+        "src": "assets/S01/CC/09.id.vtt"
+      }
+    ]
+  },
+  {
+    "type": "video",
+    "title": "10. A Wolf in Sheep's Clothing",
+    "sources": [
+      {
+        "src": "https://cdn.jsdelivr.net/gh/mjstc-storage/Beastars_S01E10/section.m3u8",
+        "type": "m3u8",
+        "size": 1080
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "subtitles",
+        "label": "Vietnamese",
+        "srclang": "VN",
+        "src": "assets/S01/CC/10.vi.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "English",
+        "srclang": "EN",
+        "src": "assets/S01/CC/10.en.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "Indonesian",
+        "srclang": "ID",
+        "src": "assets/S01/CC/10.id.vtt"
+      }
+    ]
+  },
+  {
+    "type": "video",
+    "title": "11. To the Neon District",
+    "sources": [
+      {
+        "src": "https://cdn.jsdelivr.net/gh/mjstc-storage/Beastars_S01E11/section.m3u8",
+        "type": "m3u8",
+        "size": 1080
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "subtitles",
+        "label": "Vietnamese",
+        "srclang": "VN",
+        "src": "assets/S01/CC/11.vi.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "English",
+        "srclang": "EN",
+        "src": "assets/S01/CC/11.en.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "Indonesian",
+        "srclang": "ID",
+        "src": "assets/S01/CC/11.id.vtt"
+      }
+    ]
+  },
+  {
+    "type": "video",
+    "title": "12. In the Storm's Wake",
+    "sources": [
+      {
+        "src": "https://cdn.jsdelivr.net/gh/mjstc-storage/Beastars_S01E12/section.m3u8",
+        "type": "m3u8",
+        "size": 1080
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "subtitles",
+        "label": "Vietnamese",
+        "srclang": "VN",
+        "src": "assets/S01/CC/12.vi.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "English",
+        "srclang": "EN",
+        "src": "assets/S01/CC/12.en.vtt"
+      },
+      {
+        "kind": "subtitles",
+        "label": "Indonesian",
+        "srclang": "ID",
+        "src": "assets/S01/CC/12.id.vtt"
+      }
+    ]
+  },
+  "poster.jpg",
+  "khplayer_lWM5NMHBLiPXdCvcOqA2MTYxNTA0MzA5MzU3OQ1"
+]

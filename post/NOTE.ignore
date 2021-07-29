@@ -1,0 +1,7 @@
+﻿- Phần mô tả của Hugo sau khi 'hugo new post/abc-xyz/index.html' phải thêm
+  + description
+  + tags
+  + categories
+  + lastmod
+
+- feature chiều ngang ít nhất khoảng 2000px, thumb là 360px
