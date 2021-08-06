@@ -38,7 +38,7 @@ const dngndFunc = {
         <div class=btn-inner>${message}</div>
       </div>`,
     );
-    $('#'+tempID).slideDown(this.speed);
+    $('#' + tempID).slideDown(this.speed);
     setTimeout(() => {
       $(`#${tempID}`).slideUp(this.speed, () => $(`#${tempID}`).remove());
     }, duration);
@@ -179,8 +179,8 @@ const dngndFunc = {
       // iterate urls array from data
       for (const i of episode.urls) {
         e = i.split('__');
-        if (e.length == '3') output.push(createBtn(e[0], e[1], false, e[2]));
-        if (e.length == '4') output.push(createBtn(e[0], e[1], e[2], e[3]));
+        if (e.length == 3) output.push(createBtn(e[0], e[1], false, e[2]));
+        if (e.length == 4) output.push(createBtn(e[0], e[1], e[2], e[3]));
       };
 
       // iterate captions array from data

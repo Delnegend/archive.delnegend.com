@@ -13,10 +13,15 @@
   --border-radius-s: 5px;
   --border-radius-m: 8px;
   --border-radius-l: 12px;
+  --spacing-s: .8rem;
+  --spacing-m: 1rem;
+  --spacing-l: 1.5rem;
+  --spacing-xl: 2rem;
 }
 
 * {
   font-family: "SF Pro Display", sans-serif;
+  font-weight: 300;
 }
 
 .navbarContainer {
@@ -68,12 +73,13 @@ main {
   width: 100%;
   margin-bottom: 3rem;
 }
-main .list {
+
+.list {
   --card-min-width: 250px;
   --card-height: 400px;
   width: 100%;
 }
-main .list .card-columns {
+.list .card-columns {
   width: 75%;
   max-width: 1200px;
   margin-left: auto;
@@ -85,7 +91,7 @@ main .list .card-columns {
   justify-content: space-evenly;
   margin: 4rem auto;
 }
-main .list .card {
+.list .card {
   --inner-padding: 12px;
   --card-scale: 1.1;
   position: relative;
@@ -97,7 +103,7 @@ main .list .card {
   overflow: hidden;
   transition: transform 0.4s ease-out;
 }
-main .list .card .cover img {
+.list .card .cover img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -105,13 +111,13 @@ main .list .card .cover img {
   transform: scale(1.2);
   transition: transform 0.2s ease-out;
 }
-main .list .card:hover {
+.list .card:hover {
   transform: scale(var(--card-scale));
 }
-main .list .card:hover .cover img {
+.list .card:hover .cover img {
   transform: scale(1);
 }
-main .list .card .card-body {
+.list .card .card-body {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -119,42 +125,41 @@ main .list .card .card-body {
   width: 100%;
   height: 100%;
 }
-main .list .card .card-body .card-summary,
-main .list .card .card-body .card-title {
+.list .card .card-body .card-title {
   width: calc(100% - var(--inner-padding) * 2);
   height: calc(var(--card-height) - var(--inner-padding) * 2);
   padding: var(--inner-padding);
   position: absolute;
   display: flex;
   color: white;
-}
-main .list .card .card-body .card-title {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.84), transparent);
   justify-content: flex-end;
   align-items: flex-start;
   flex-direction: column;
 }
-main .list .card .card-body .card-title .title {
+.list .card .card-body .card-title .title {
   font-size: 1.8rem;
+  font-weight: 400;
 }
-main .list .card .card-body .card-title .year {
+.list .card .card-body .card-title .year {
   font-size: 24px;
   font-weight: 200;
 }
-main .single .card .card-body {
+
+.single .card .card-body {
   width: 75%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
-main .single .card .cover {
+.single .card .cover {
   width: 100%;
   position: relative;
 }
-main .single .card .cover img {
+.single .card .cover img {
   width: 100%;
 }
-main .single .card .cover .overlay {
+.single .card .cover .overlay {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.75), transparent, transparent);
   position: absolute;
   display: flex;
@@ -165,14 +170,14 @@ main .single .card .cover .overlay {
   top: 0;
 }
 @media screen and (min-width: 1001px) {
-  main .single .card .cover .overlay {
+  .single .card .cover .overlay {
     align-items: flex-end;
   }
-  main .single .card .cover .overlay .info-ctn {
+  .single .card .cover .overlay .info-ctn {
     margin-bottom: 5rem;
   }
 }
-main .single .card .cover .overlay .info-ctn {
+.single .card .cover .overlay .info-ctn {
   width: 75%;
   max-width: 1200px;
   margin-left: auto;
@@ -180,28 +185,29 @@ main .single .card .cover .overlay .info-ctn {
   display: flex;
   flex-direction: column;
 }
-main .single .card .cover .overlay .info-ctn .title {
+.single .card .cover .overlay .info-ctn .title {
   font-size: 5rem;
   font-weight: bold;
 }
-main .single .card .cover .overlay .info-ctn .release-year {
-  font-size: 2rem;
+.single .card .cover .overlay .info-ctn .release-year {
+  font-size: 4rem;
+  font-weight: 100;
 }
 @media screen and (max-width: 1000px) {
-  main .single .card .cover .overlay {
+  .single .card .cover .overlay {
     background: linear-gradient(to top, black, transparent);
     align-items: center;
     font-size: 16px;
   }
-  main .single .card .cover .overlay .info-ctn {
+  .single .card .cover .overlay .info-ctn {
     justify-content: center;
     align-items: center;
   }
-  main .single .card .cover .overlay .info-ctn .title {
+  .single .card .cover .overlay .info-ctn .title {
     font-size: 3rem;
     text-align: center;
   }
-  main .single .card .cover .overlay .info-ctn .release-year {
+  .single .card .cover .overlay .info-ctn .release-year {
     font-size: 1.5rem;
   }
 }
@@ -285,20 +291,26 @@ code {
 }
 
 hr {
-  border-color: rgba(0, 0, 0, 0.3);
-  border-width: 2px;
+  --color: white;
+  --thickness: 2px;
+  border-color: var(--color);
+  border-width: var(--thickness);
 }
 hr.half {
   width: 50%;
 }
-hr.left {
+hr[left=""] {
   margin-left: 0;
 }
-hr.three-quarter {
+hr[three-quarter=""] {
   width: 75%;
 }
-hr.dotted {
-  border-top: 5px dotted rgba(0, 0, 0, 0.3);
+hr[dotted=""] {
+  border-top: var(--thickness) dotted var(--color);
+  border-bottom: 0;
+}
+hr[dashed=""] {
+  border-top: var(--thickness) dashed var(--color);
   border-bottom: 0;
 }
 
@@ -530,8 +542,14 @@ hr.dotted {
 
 .toggle-elem-ctn {
   display: flex;
-  margin: 5px 12px;
+  justify-content: center;
   align-items: center;
+}
+.toggle-elem-ctn.margin-both {
+  margin: 0 var(--spacing-m);
+}
+.toggle-elem-ctn:not(.margin-both) {
+  margin-left: var(--spacing-m);
 }
 
 @-moz-keyframes rainbowt {
@@ -621,6 +639,7 @@ hr.dotted {
 }
 
 .table {
+  margin-bottom: var(--spacing-m);
   overflow: scroll;
   width: 100%;
   max-height: 70vh;
@@ -687,11 +706,20 @@ h4,
 h5,
 h6 {
   width: fit-content;
+  margin: 0;
 }
 
-[flexRow=""] {
+[flex-row=""] {
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+
+[flex-center=""] {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .alert-container {
@@ -722,6 +750,19 @@ h6 {
   right: 0;
   width: 100%;
   height: 100%;
+}
+
+.head-title {
+  --padding: var(--spacing-m);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: calc(100% - var(--padding) * 2);
+  border-radius: var(--border-radius-m);
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: var(--spacing-l) 0;
+  padding: var(--padding);
 }
 
 /*# sourceMappingURL=custom.css.map */
