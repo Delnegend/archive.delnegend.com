@@ -3,9 +3,6 @@
 /* eslint-disable max-len */
 const dngndFunc = {
   speed: 'normal',
-  d(selector) {
-    return document.querySelector(selector);
-  },
   randomString(length = 20) {
     let result = '';
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -33,7 +30,7 @@ const dngndFunc = {
     if (!$('.alert-container')[0]) {
       $('body').append(`<div class="alert-container"><div class="inneralert-container"></div></div>`);
     }
-    $('.inneralert-container').append(/* html */
+    $('.inneralert-container').append( /* html */
       `<div class="alert standard-btn" id=${tempID} role=alert style=display:none>
         <div class=btn-inner>${message}</div>
       </div>`,
@@ -116,7 +113,9 @@ const dngndFunc = {
     const output = [];
     let subtitles_header = '';
 
-    for (const elem of data) if (elem.subs) subtitles_header = `<th>Subtitle</th>`;
+    for (const elem of data) {
+      if (elem.subs) subtitles_header = `<th>Subtitle</th>`;
+    }
 
     output.push( /* html */ `
       <div class=table>
@@ -188,7 +187,7 @@ const dngndFunc = {
         output.push(`</th><th>`);
         for (const i of episode.subs) {
           language = i.split('__');
-          output.push(/* html */`
+          output.push( /* html */ `
             <a class="flag" href="${language[1]}" download="[${document.querySelector('title').innerHTML.replace(' – Delnegend', '')}] ${language[1].replace('/', '_')}">
               <img class="flag interactable" src="/flag/${language[0].toLowerCase()}.svg">
             </a>`);
@@ -228,18 +227,11 @@ const dngndFunc = {
     const index = array.indexOf(elem);
     if (index > -1) array.splice(index, 1);
   },
-  recheckBoxes() {
-    const a = JSON.parse(localStorage.getItem('checkbox_check'));
-    let data;
-    if (a) {
-      data = a[window.location.pathname.replace(/\//g, '_')] || [];
-      if (data.length) data.forEach((e) => $(e).click());
-    }
-    this.isFromUserAction = true;
-  },
   objLength(obj) {
     let count = 0;
-    for (const i in obj) if (obj.hasOwnProperty(i)) count++;
+    for (const i in obj) {
+      if (obj.hasOwnProperty(i)) count++;
+    }
     return count;
   },
   isFirefox() {
@@ -274,33 +266,15 @@ const dngndFunc = {
     });
   },
 };
-document.addEventListener('DOMContentLoaded', async () => {
-  // #region Tắt/bật công tắc
-  // $(".toggleElemBtn>input").on("click", function () {
-  //   let status = this.checked,
-  //     label = this.parentNode.parentNode,
-  //     hideText = label.querySelector(".hideText"),
-  //     showText = label.querySelector(".showText");
-  //   if (status) {
-  //     hideText.classList.add("inactive");
-  //     showText.classList.remove("inactive");
-  //   } else if (!status) {
-  //     hideText.classList.remove("inactive");
-  //     showText.classList.add("inactive");
-  //   }
-  // });
-  // #endregion
-
+$(document).ready(async () => {
   $('.table').each((i, e) => (!e.getAttribute('tweaked')) && dngndFunc.tweakTable(e));
 
   // #region Khởi tạo mấy cái khung download
-  const downloadView = () => {
+  (() => {
     const
       a = 'dl-grid-view';
     const b = 'dl-table-view';
-
     const reTweakTable = (e) => (!e.querySelector('.table').getAttribute('tweaked')) && dngndFunc.tweakTable(e);
-
     if ($(a).length) $(a).each((i, e) => dngndFunc.dlGridView(e.getAttribute('data'), e));
     if ($(b).length) {
       $(b).each(async (index, elem) => {
@@ -308,8 +282,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         reTweakTable(elem);
       });
     }
-  };
-  downloadView();
+  })();
   // #endregion
 
   // #region Firefox Lưu lại state "check" của btn
@@ -324,27 +297,36 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
   // #endregion
 
-  (() => {
-    const e = document.querySelectorAll('p');
-    for (const elem of e) {
-      // if (elem.innderHTML == '')
-      if (elem.innerHTML == '') elem.parentElement.removeChild(elem);
-    }
-  })();
+  $('.menu .close-menu').on('click', () => {
+    $('.menu').addClass('hidden');
+  });
+  $('.navbarContainer .open-menu').on('click', ()=>{
+    $('.menu').removeClass('hidden');
+  });
 });
 window.addEventListener('load', () => {
-  if (!dngndFunc.isFirefox()) dngndFunc.recheckBoxes();
+  if (!dngndFunc.isFirefox()) {
+    const a = JSON.parse(localStorage.getItem('checkbox_check'));
+    let data;
+    if (a) {
+      data = a[window.location.pathname.replace(/\//g, '_')] || [];
+      if (data.length) data.forEach((e) => $(e).click());
+    }
+    dngndFunc.isFromUserAction = true;
+  }
 });
 
 // #region WEBP Polyfill
-const isSafari = /constructor/i.test(window.HTMLElement) || (function(p) {
-  return p.toString() === '[object SafariRemoteNotification]';
-})(!window.safari || (typeof safari !== 'undefined' && safari.pushNotification));
+(() => {
+  const isSafari = /constructor/i.test(window.HTMLElement) || (function(p) {
+    return p.toString() === '[object SafariRemoteNotification]';
+  })(!window.safari || (typeof safari !== 'undefined' && safari.pushNotification));
 
-if (!!document.documentMode || isSafari) {
-  const webpMachine = new webpHero.WebpMachine();
-  webpMachine.polyfillDocument();
-}
+  if (!!document.documentMode || isSafari) {
+    const webpMachine = new webpHero.WebpMachine();
+    webpMachine.polyfillDocument();
+  }
+})();
 // #endregion
 
 // #region Get the DOM path of the clicked <a> | Source: https://stackoverflow.com/a/28150097

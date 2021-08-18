@@ -29,6 +29,9 @@
   top: 0;
   left: 0;
   z-index: 100;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   -webkit-touch-callout: none !important;
   -webkit-user-select: none !important;
   -khtml-user-select: none !important;
@@ -37,6 +40,9 @@
   user-select: none !important;
   backdrop-filter: blur(2px);
   margin: 1rem 0 0 1.5rem;
+}
+.navbarContainer .logo {
+  z-index: 102;
 }
 .navbarContainer .logo img {
   width: 3rem;
@@ -47,6 +53,64 @@
 }
 .navbarContainer .logo img:hover {
   transform: scale(1.1);
+}
+.navbarContainer .open-menu {
+  margin-left: -1.5rem;
+  padding: 0.5rem 1rem 0.5rem 2.2rem;
+  background: white;
+  color: black;
+  border-radius: 0 100vh 100vh 0;
+  z-index: 101;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  cursor: pointer;
+}
+.navbarContainer .open-menu:hover {
+  transform: scale(1.1);
+}
+.navbarContainer .open-menu:active {
+  transform: scale(0.95);
+}
+
+.menu {
+  --board-width: 800px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 103;
+  backdrop-filter: blur(5px);
+  transition: margin 0.5s ease-out;
+}
+.menu.hidden {
+  margin-left: -100vw;
+}
+.menu .board {
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  background-color: white;
+  position: relative;
+}
+.menu .board .close-menu {
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  margin: 1rem;
+  padding: 0.8rem;
+  width: fit-content;
+  background: black;
+}
+.menu .board .menu-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
 }
 
 body {
