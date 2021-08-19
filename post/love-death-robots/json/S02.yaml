@@ -1,0 +1,40 @@
+- episode: 1
+  title: "Automated Customer Service"
+  urls:
+    - DIRECT__GitLab__https://gitlab.com/luu-phim/love.death.robots/-/raw/master/S02E01.Automated.Customer.Service.mp4
+    - DIRECT__RawGit__https://glcdn.rawgit.org/luu-phim/love.death.robots/master/S02E01.Automated.Customer.Service.mp4
+- episode: 2
+  title: "Ice"
+  urls:
+    - DIRECT__GitLab__https://gitlab.com/luu-phim/love.death.robots/-/raw/master/S02E02.Ice.mp4
+    - DIRECT__RawGit__https://glcdn.rawgit.org/luu-phim/love.death.robots/master/S02E02.Ice.mp4
+- episode: 3
+  title: "Pop Squad"
+  urls:
+    - DIRECT__GitLab__https://gitlab.com/luu-phim/love.death.robots/-/raw/master/S02E03.Pop.Squad.mkv
+    - DIRECT__RawGit__https://glcdn.rawgit.org/luu-phim/love.death.robots/master/S02E03.Pop.Squad.mkv
+- episode: 4
+  title: 	"Snow in the Desert"
+  urls:
+    - DIRECT__GitLab__https://gitlab.com/luu-phim/love.death.robots/-/raw/master/S02E04.Snow.in.the.Desert.mp4
+    - DIRECT__RawGit__https://glcdn.rawgit.org/luu-phim/love.death.robots/master/S02E04.Snow.in.the.Desert.mp4
+- episode: 5
+  title: "The Tall Grass"
+  urls:
+    - DIRECT__GitLab__https://gitlab.com/luu-phim/love.death.robots/-/raw/master/S02E05.The.Tall.Grass.mp4
+    - DIRECT__RawGit__https://glcdn.rawgit.org/luu-phim/love.death.robots/master/S02E05.The.Tall.Grass.mp4
+- episode: 6
+  title: "All Through the House"
+  urls:
+    - DIRECT__GitLab__https://gitlab.com/luu-phim/love.death.robots/-/raw/master/S02E06.All.Through.the.House.mp4
+    - DIRECT__RawGit__https://glcdn.rawgit.org/luu-phim/love.death.robots/master/S02E06.All.Through.the.House.mp4
+- episode: 7
+  title: "Life Hutch"
+  urls:
+    - DIRECT__GitLab__https://gitlab.com/luu-phim/love.death.robots/-/raw/master/S02E07.Life.Hutch.mp4
+    - DIRECT__RawGit__https://glcdn.rawgit.org/luu-phim/love.death.robots/master/S02E07.Life.Hutch.mp4
+- episode: 8
+  title: "The Drowned Giant"
+  urls:
+    - DIRECT__GitLab__https://gitlab.com/luu-phim/love.death.robots/-/raw/master/S02E08.The.Drowned.Giant.mp4
+    - DIRECT__RawGit__https://glcdn.rawgit.org/luu-phim/love.death.robots/master/S02E08.The.Drowned.Giant.mp4
