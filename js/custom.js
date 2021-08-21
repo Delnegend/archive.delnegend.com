@@ -299,8 +299,12 @@ $(document).ready(async () => {
 
   $('.menu .close-menu').on('click', () => {
     $('.menu').addClass('hidden');
+    setTimeout(() => {
+      $('.menu').hide();
+    }, 500);
   });
-  $('.navbarContainer .open-menu').on('click', ()=>{
+  $('.navbarContainer .open-menu').on('click', () => {
+    $('.menu').show();
     $('.menu').removeClass('hidden');
   });
 });
