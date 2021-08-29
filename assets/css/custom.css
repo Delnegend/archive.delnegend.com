@@ -1,7 +1,7 @@
 :root {
   --border-rad: 8px;
   --main-color-black: #42081f;
-  --main-color-dark: #421c2b;
+  --main-color-dark: #5a263b;
   --main-color-medium: #8f1143;
   --main-color: #c2185b;
   --main-color-light: #cc5685;
@@ -38,20 +38,8 @@
   -moz-user-select: none !important;
   -ms-user-select: none !important;
   user-select: none !important;
-  background: linear-gradient(225deg, rgba(102, 36, 36, 0.6), rgba(36, 102, 46, 0.6), rgba(38, 36, 102, 0.6));
-  background-size: 600% 600%;
-  animation: navbarBg 11s ease infinite;
-}
-@keyframes navbarBg {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  background-color: var(--main-color-medium);
+  box-shadow: 0px 5px 19px -5px black;
 }
 .navbarContainer .navbar {
   width: 75%;
@@ -649,92 +637,6 @@ hr[dashed=""] {
   margin-left: var(--spacing-m);
 }
 
-@-moz-keyframes rainbowt {
-  0% {
-    color: orange;
-  }
-  20% {
-    color: red;
-  }
-  40% {
-    color: yellow;
-  }
-  60% {
-    color: green;
-  }
-  80% {
-    color: blue;
-  }
-  100% {
-    color: orange;
-  }
-}
-@-webkit-keyframes rainbowt {
-  0% {
-    color: orange;
-  }
-  20% {
-    color: red;
-  }
-  40% {
-    color: yellow;
-  }
-  60% {
-    color: green;
-  }
-  80% {
-    color: blue;
-  }
-  100% {
-    color: orange;
-  }
-}
-@-o-keyframes rainbowt {
-  0% {
-    color: orange;
-  }
-  20% {
-    color: red;
-  }
-  40% {
-    color: yellow;
-  }
-  60% {
-    color: green;
-  }
-  80% {
-    color: blue;
-  }
-  100% {
-    color: orange;
-  }
-}
-@keyframes rainbowt {
-  0% {
-    color: orange;
-  }
-  20% {
-    color: red;
-  }
-  40% {
-    color: yellow;
-  }
-  60% {
-    color: green;
-  }
-  80% {
-    color: blue;
-  }
-  100% {
-    color: orange;
-  }
-}
-.rainbow-text {
-  -webkit-animation: rainbowt 10s infinite;
-  -ms-animation: rainbowt 10s infinite;
-  animation: rainbowt 10s infinite;
-}
-
 .table {
   margin-bottom: var(--spacing-m);
   overflow: scroll;
@@ -820,7 +722,7 @@ h6 {
 
 .alert-container {
   position: fixed;
-  top: 0;
+  top: 4rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -856,7 +758,7 @@ h6 {
   flex-direction: column;
   width: calc(100% - var(--padding) * 2);
   border-radius: var(--border-radius-m);
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--main-color-medium);
   margin: var(--spacing-l) 0;
   padding: var(--padding);
 }
