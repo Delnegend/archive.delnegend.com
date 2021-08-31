@@ -88,6 +88,7 @@
 .navbarContainer .navbar .readme-btn a {
   font-weight: bold;
   font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 body {
@@ -170,13 +171,8 @@ body main .list .card .card-body .card-title .year {
   font-size: 24px;
   font-weight: 200;
 }
-body main .single .card .card-body {
-  width: 75%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
 body main .single .card .cover {
+  margin-bottom: var(--spacing-xl);
   width: 100%;
   position: relative;
 }
@@ -234,6 +230,12 @@ body main .single .card .cover .overlay .info-ctn .release-year {
   body main .single .card .cover .overlay .info-ctn .release-year {
     font-size: 1.5rem;
   }
+}
+body main .single .card .card-body {
+  width: 75%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
