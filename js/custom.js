@@ -16,22 +16,16 @@ const dngndFunc = {
     const tempClass = this.randomString();
     elem.classList.add(tempClass);
     const clipboard = new ClipboardJS('.' + tempClass);
-    clipboard.on('success', function(e) {
-      dngndFunc.msgBox('Copied to clipboard');
-    });
+    clipboard.on('success', (e) => dngndFunc.msgBox('Copied to clipboard'));
     setTimeout(() => elem.classList.remove(tempClass), 0);
   },
   msgBox(message = 'Thông báo!', duration = 1000) {
     // Type: https://getbootstrap.com/docs/4.0/components/alerts/
-
     // Tạo 1 id tạm thời cho container thông báo, mỗi 1 noti là 1 id riêng, tránh trùng lặp với noti trước nếu 2 cái overlap nhau
     const tempID = this.randomString();
-    // Tạo container chứa dngndFunc.msgBox nếu chưa có
-    if (!$('.alert-container')[0]) {
-      $('body').append(`<div class="alert-container"><div class="inneralert-container"></div></div>`);
-    }
-    $('.inneralert-container').append( /* html */
-      `<div class="alert standard-btn" id=${tempID} role=alert style=display:none>
+    if (!$('.alert__container')[0]) $('body').append(`<div class="alert__container"><div class="alert__content"></div></div>`);
+    $('.alert__content').append( /* html */
+      `<div class="alert button--standard" id=${tempID} role=alert style=display:none>
         <div class=btn-inner>${message}</div>
       </div>`,
     );
@@ -51,30 +45,25 @@ const dngndFunc = {
       $(target).attr('prevDisplay', 'block');
       $(target).hide();
     }
-    if (status) {
-      $(target).slideDown(this.speed);
-    } else if (!status) {
-      $(target).slideUp(this.speed);
-    }
+    if (status) $(target).slideDown(this.speed);
+    else if (!status) $(target).slideUp(this.speed);
     if (!this.isFirefox() && this.isFromUserAction) this.saveCheckboxStateToLocalStorage(elem);
   },
   isFromUserAction: false,
-  async dlGridView(data_file, element) {
-    if (!element) return new Error('Invalid element');
-    element.classList.add('direct-link-grid-view');
+  async movieListGridInit(data_file, element) {
+    element.classList.add('movie-list-grid__container');
     data = await this.getYAML(data_file) || [];
     if (!data.length) return new Error('This', data, 'is invalid or empty');
     for (const elem of data) {
-      const
-        episode = elem.episode;
+      const episode = elem.episode;
       const poster = elem.poster || '/img/blank.jpg';
       let posterWEBP = '';
       let summary = '';
       if (elem.webp) posterWEBP = /* html */ `<source srcset="${elem.webp}" type="image/webp">`;
 
       // Tên tập, nếu không có stt thì chỉ dùng tên tập
-      let title = /* html */ `<div class="title">${elem.title}</div>`;
-      if (episode) title = /* html */ `<div class="title">${episode}. ${elem.title}</div>`;
+      let title = /* html */ `<div class="MLG__episode__title">${elem.title}</div>`;
+      if (episode) title = /* html */ `<div class="MLG__episode__title">${episode}. ${elem.title}</div>`;
 
       // Gộp chung duration với filesize thành extraIn4
       let duration = elem.duration;
@@ -90,8 +79,8 @@ const dngndFunc = {
       if (elem.summary) summary = /* html */ `<div class="custom-hr"></div><p class="epSummary">${elem.summary}</p>`;
 
       $(element).append( /* html */ `
-      <div class="an-episode">
-        <div class="episode-image" onclick='dngndFunc.string2clip("${elem.url}",this)'>
+      <div class="MLG__episode">
+        <div class="MLG__episode__preview" onclick='dngndFunc.string2clip("${elem.url}",this)'>
           <picture>
             ${posterWEBP}
             <source srcset="${poster}" type="image/jpg">
@@ -133,7 +122,7 @@ const dngndFunc = {
       type = type.toLowerCase();
       const temp = [];
       if (type == 'direct') {
-        temp.push( /* html */ `<span class="standard-btn interactable" onclick="dngndFunc.string2clip(\`${data}\`,this)">`);
+        temp.push( /* html */ `<span class="button--standard interactable" onclick="dngndFunc.string2clip(\`${data}\`,this)">`);
         if (!display2) temp.push(`<span class="btn-inner">${display}</span>`);
         else if (display2) {
           temp.push( /* html */ `
@@ -146,14 +135,14 @@ const dngndFunc = {
         if (!display2) {
           temp.push( /* html */ `
           <a href="${data}" target="_blank" rel="noopener noreferrer">
-            <div class="standard-btn interactable">
+            <div class="button--standard interactable">
               <div class="btn-inner">${display}</div>
             </div>
           </a>
         `);
         } else if (display2) {
           temp.push( /* html */ `
-          <div class="standard-btn interactable">
+          <div class="button--standard interactable">
             <a href="${data}" target="_blank" slide="1" rel="noreferrer noopener">
               <div class="btn-inner-slide">${display}</div>
               <div class="btn-inner-alter">${display2}</div>
@@ -255,7 +244,7 @@ const dngndFunc = {
     return new Promise((resolve) => {
       let request = new XMLHttpRequest();
       request.open('GET', url, true);
-      request.onreadystatechange = function() {
+      request.onreadystatechange = function () {
         if (this.readyState === 4) {
           if (this.status >= 200 && this.status < 400) resolve(YAML.parse(this.responseText));
           else resolve(void 0);
@@ -271,15 +260,13 @@ $(document).ready(async () => {
 
   // #region Khởi tạo mấy cái khung download
   (() => {
-    const
-      a = 'dl-grid-view';
-    const b = 'dl-table-view';
-    const reTweakTable = (e) => (!e.querySelector('.table').getAttribute('tweaked')) && dngndFunc.tweakTable(e);
-    if ($(a).length) $(a).each((i, e) => dngndFunc.dlGridView(e.getAttribute('data'), e));
+    const a = 'movie-list-grid';
+    const b = 'movie-list-table';
+    if ($(a).length) $(a).each((i, e) => dngndFunc.movieListGridInit(e.getAttribute('data'), e));
     if ($(b).length) {
       $(b).each(async (index, elem) => {
         await dngndFunc.dlTableView(elem.getAttribute('data'), elem);
-        reTweakTable(elem);
+        (!elem.querySelector('.table').getAttribute('tweaked')) && dngndFunc.tweakTable(elem);
       });
     }
   })();
@@ -296,18 +283,8 @@ $(document).ready(async () => {
     });
   }
   // #endregion
-
-  $('.menu .close-menu').on('click', () => {
-    $('.menu').addClass('hidden');
-    setTimeout(() => {
-      $('.menu').hide();
-    }, 500);
-  });
-  $('.navbarContainer .open-menu').on('click', () => {
-    $('.menu').show();
-    $('.menu').removeClass('hidden');
-  });
 });
+
 window.addEventListener('load', () => {
   if (!dngndFunc.isFirefox()) {
     const a = JSON.parse(localStorage.getItem('checkbox_check'));
@@ -322,7 +299,7 @@ window.addEventListener('load', () => {
 
 // #region WEBP Polyfill
 (() => {
-  const isSafari = /constructor/i.test(window.HTMLElement) || (function(p) {
+  const isSafari = /constructor/i.test(window.HTMLElement) || (function (p) {
     return p.toString() === '[object SafariRemoteNotification]';
   })(!window.safari || (typeof safari !== 'undefined' && safari.pushNotification));
 
@@ -334,7 +311,7 @@ window.addEventListener('load', () => {
 // #endregion
 
 // #region Get the DOM path of the clicked <a> | Source: https://stackoverflow.com/a/28150097
-$.fn.fullSelector = function() {
+$.fn.fullSelector = function () {
   const path = this.parents().addBack();
   const quickCss = path.get().map((item) => {
     const self = $(item);
